@@ -1,0 +1,214 @@
+*{
+  box-sizing: border-box;
+}
+
+/*Dorte koder Forsiden*/
+
+#dorte {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  background-image: url(img/breatherdesigntema3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*header og navmenu*/
+#dorte header {
+  height: 98px;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: solid 3px white; /*#414033;*/
+  background-color: rgba(129,76,79,0.4); /*#814C4F;*/
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#dorte header #header {
+  height: 98px;
+}
+
+#dorte header #header img {
+  height: 90%;
+  padding: 8px 0 0 5%;
+  margin: 0;
+  float: left;
+}
+
+#dorte nav {
+  position: absolute;
+  margin-top: 1.4em;
+  width: 80%;
+  margin-left: 10%;
+  padding-right: 5px;
+}
+
+#dorte nav ul {
+  list-style-type: none;
+  margin: 0;
+  overflow:  hidden;
+  padding-top: 12px;
+}
+
+#dorte nav ul li {
+    float: right;
+}
+
+#dorte nav ul li a {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#dorte li a:hover {
+  color: rgb(83,112,129);
+}
+
+.flex-item h3, h2, h1 {
+  font-family: 'Varela Round', sans-serif;
+}
+.flex-item p {
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.flex-container {
+    margin-top: 9em;
+    margin-left: 3em;
+    margin-right: 7em;
+    margin-bottom: 5em;
+    display: flex;
+    width: 88%;
+    height: auto;
+    background-color: rgb(255,255,255);
+    justify-content: space-around;
+    /*z-index: -100;*/
+    opacity: 0.95;
+}
+
+.flex-item {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 4% 2% 3% 1%;
+}
+
+#dorte footer {
+  height: 98px;
+  padding: 0;
+  border-top: solid 3px white; /*#414033;*/
+  margin: 0;
+  background-color: rgba(129,76,79,0.4);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+}
+
+
+#dorte footer p {
+  text-align: center;
+  font-size: 0.75em;
+  font-family: 'Varela Round', sans-serif;
+  color: #ffffff;
+}
+
+#dorte footer p a img {
+  width: 20px;
+  margin-left: 1%;
+}
+
+
+/*forside slutter her */
+
+/*Hamburgermenuen starter her*/
+/*hvordan overlayet ser ud nÃ¥r det kommer frem*/
+/*Dorte koder Menu + Forside*/
+
+.navi{
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #537081; /*baggrund menu ud rgba(0,0,0,0.9);*/
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/*hvordan ser indholdet ud i hamburgermenuen*/
+.overlayer{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 10%;
+  margin-top: 30px;
+  font-family: 'Varela Round', sans-serif;
+}
+/*hvordan linkene ser ud i overlay*/
+.navi a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 10em;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+/*giver farve nÃ¥r der holdes over indholdet*/
+.navi a:hover .navi a:focus{
+  color: #537081; /*#f1f1f1;*/
+}
+
+/*position af x/lukke knappen i menuen*/
+.navi .closebut{
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  padding: 0;
+  font-size: 60px;
+}
+/*hamburgerikon*/
+span{
+  position: absolute;
+  right: 5%;
+  margin-top: 20px;
+  font-size: 2.0em;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+/*menuen slutter her*/
+@media screen and (max-width: 560px) {
+#dorte nav {
+  display: none; /*nav menubar forsvinder*/
+}
+}
+
+@media screen and (max-width: 982px) {
+.flex-container {
+    flex-wrap: wrap;
+}
+.flex-item {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin: 4% 2% 3% 1%;
+}
+.flex-item h3, h2, h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 200%;
+}
+.flex-item p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 160%;
+}
+}

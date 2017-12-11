@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Webbrowser karaktersæt UTF-8 for de fleste symboler og karakterer -->
+  <meta charset="utf-8">
+  <!-- Titel for siden -->
+  <title>IN2 Design</title>
+  <!-- Link til stylesheet -->
+  <link href="stylekm.css" rel="stylesheet" type="text/css">
+  <!-- Link til font google -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+      <!-- Meta tag for mobilvisning -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Search Icon -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="dorte">
+
+  <header>
+    <div id="header">
+      <a href="index.html"><img src="./img/logoin2.png" alt="IN2 logo"></a>
+        <!-- navigationsbar menu -->
+    <nav>
+      <ul>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="indretning.html">Indretning</a></li>
+        <li><a href="webshop.html">Webshop</a></li>
+        </ul>
+      </nav>
+          <!-- hamburgermenuen -->
+      <div id=mynav class=navi> <!--yderste lag-->
+        <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a> <!-- knap til at lukke nav-->
+
+        <div class="overlayer"> <!--indhold i yderste lag-->
+          <a href="index.html">Forside</a>
+          <a href="webshop.html">Webshop</a>
+          <a href="indretning.html">Indretning</a>
+          <a href="inspiration.html">Inspiration</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
+      <span onclick="openNav()">☰</span> <!--open nav-->
+    </div>
+  </header>
+
+
+<!-- katrine starter kodning -->
+  <main id="katrine">
+  <main>
+    <div class="hejsa">
+      <!-- Laver hvid baggrund -->
+     <h1>INSPIRATION</h1>
+     <p>Få inspiration til hvordan danske klassikere kan bruges i indretningen af dit hjem.</p>
+     <!-- overskrift og tekst  -->
+
+
+
+<figure>
+  <img src="./img/arnejacobsenstol.jpg" alt="Mountain View" href="grey.html">
+
+
+  <p>Verdenskendte <a href="grey.html" target="_blank">Arne Jacobsens stol "Ægget"</a> designet til SAS Radisson Hotel i 1958. Design af høj klasse.</p>
+
+
+
+  <img src="./img/phlampekokken.jpeg" alt="Mountain View">
+  <p>PH lampen er udviklet af Poul Henningsen (PH) i 1958, der ville skabe den ultimative blændfri pendel. Uanset hvordan lampen installeres, og lige meget hvilken lyskilde du benytter, så er pendlen blændfri.</p>
+
+
+<img src="./img/erikjorgensen.jpg" alt="Mountain View">
+<p>Wegners Cliffhanger - Ox Chair stolen er indbegrebet af maskulinitet. Den ultimative hvilestol.</p>
+
+<img src="./img/borgemogensen.jpg" alt="Mountain View">
+<p>No. 1 fra 1955 er den første sofa, som Børge Mogensen tegnede for Fredericia Furniture. Ideel til både entreen, arbejdsværelset, til den mindre lejlighed eller blot som supplement til den større sofa i stuen. </p>
+
+</figure>
+</div
+
+  </main>
+
+
+  <footer>
+    <p>&copy; IN2 DESIGN 2017 - All Rights Reserved</p>
+  </footer>
+
+<script> /* javascript til at åbne menuen, når der klikkes på ☰-*/
+function openNav(){
+  document.getElementById("mynav").style.width = "100%";
+}
+function closeNav(){ /*javascript til at lukke menuen når der trykkes på x */
+  document.getElementById("mynav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>
