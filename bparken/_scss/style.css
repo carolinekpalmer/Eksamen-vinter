@@ -1,0 +1,390 @@
+@charset "UTF-8";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/* @import "_social.scss"; */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Basic Style */
+body {
+  font-family: 'Montserrat', sans-serif;
+  /*  background-color: red;*/
+}
+
+#burger {
+  display: none;
+}
+
+#burgermenu {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 5%;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 15px;
+  float: right;
+  color: Black;
+}
+
+input {
+  display: none;
+}
+
+#burger:checked + nav {
+  left: 0;
+}
+
+header {
+  border-top: 0.2em solid black;
+  border-bottom: 0.2em solid black;
+  margin-top: 3%;
+  /*padding: 5%;*/
+  z-index: 1;
+  /* END nav*/
+}
+header nav {
+  /*width bliver nød til at være i px*/
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  /*left gør at burgermenuen forsvinder helt*/
+  left: -305px;
+  top: 0;
+  background-color: #e0e0e0;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li a {
+  display: block;
+  color: Black;
+  text-align: center;
+  /*padding: 14px 16px;*/
+  text-decoration: none;
+  float: none;
+  /*height:50px;*/
+  color: #212121;
+  border-bottom: 1px solid #757575;
+  /*nyt*/
+  height: 5em;
+  padding-top: 2em;
+}
+header nav ul li a:hover {
+  background-color: #c1c1c1;
+}
+header .logo {
+  /*position: absolute;
+    top: 20px;
+    left: 140px;
+    height: 100px;
+    width: 100px;*/
+  margin-left: 45%;
+  height: 12%;
+  width: 20%;
+  background-color: white;
+  padding: 2% 0;
+}
+
+/*Header END*/
+/*heaer SLUT*/
+main {
+  /*margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;*/
+  margin: 5% 10% 5% 10%;
+  /*    background-color: red; */
+}
+
+/*Sebastian kode start*/
+/*kontakt mobil start*/
+#kontakt h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#kontakt p {
+  /*text-align: left;*/
+  line-height: 25px;
+}
+
+#kontakt img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+#kontakt .flex-grid img {
+  margin-top: 50px;
+}
+#kontakt .flex-grid p {
+  text-align: center;
+}
+
+#kontakt .flex-grid2 img {
+  margin-top: 50px;
+}
+#kontakt .flex-grid2 p {
+  text-align: center;
+}
+
+#kontakt .flex-grid3 img {
+  margin-top: 50px;
+}
+#kontakt .flex-grid3 p {
+  text-align: center;
+}
+
+/*kontakt mobil slut*/
+/*Sebastian kode slut*/
+/*Main SLUT*/
+/*Footer START*/
+footer {
+  display: block;
+  /*color: Black;*/
+  text-align: center;
+  padding: 5% 4%;
+  text-decoration: none;
+  border-top: solid 3px black;
+  /*margin-left:10px;*/
+  background-color: gray;
+}
+footer h3 {
+  font-size: 18px;
+  float: left;
+}
+footer i.fa {
+  float: right;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+footer i.fa-facebook {
+  background-color: #3b5998;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  margin-top: -10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  margin-right: 18px;
+  margin-left: -5px;
+  /*margin-top: 5px;*/
+}
+footer i.fa-instagram {
+  background-color: #bc2a8d;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  margin-top: -10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  margin-right: 18px;
+  margin-left: -5px;
+  /*margin-top: 5px;*/
+}
+
+/*END Footer*/
+/*Footer SLUT*/
+/*DESK*/
+@media screen and (min-width: 1024px) {
+  #burgermenu {
+    display: none;
+  }
+
+   /*header{
+  div{
+    input, label{
+      display:none;
+    }
+  }
+}*/
+  header {
+    height: 85px;
+    z-index: 1;
+    /* END nav */
+  }
+  header nav {
+    position: static;
+    width: auto;
+    /* overflow: hidden; */
+    /*border-top: solid 3px black;*/
+    /*border-bottom: solid 3px black;*/
+    float: right;
+    /*  max-height: 8em;*/
+    margin-right: 2%;
+    background: white;
+    height: 78.5px;
+    z-index: -1;
+    /* END ul */
+  }
+  header nav ul {
+    /* END li */
+  }
+  header nav ul li {
+    display: inline;
+    /* END a */
+  }
+  header nav ul li a {
+    display: inline-block;
+    border-bottom: 0px;
+    margin-left: 14px;
+    z-index: -1;
+    text-transform: uppercase;
+  }
+  header nav ul li a:hover:not(.active) {
+    /* background-color: #111; */
+  }
+  header nav ul li .active {
+    background-color: #4CAF50;
+    color: white;
+    height: 79px;
+  }
+  header .logo {
+    margin: 0;
+    height: auto;
+    width: 10%;
+    margin-left: 5%;
+    margin-top: -2.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+
+  /*Sebastian kode start*/
+  /*kontakt deskop start*/
+  #kontakt {
+    height: 900px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  /*Sebastian styling til flexbox*/
+  #kontakt .flex-grid {
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 74%;
+    margin-left: 0px;
+    margin-top: -2%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #kontakt .flex-grid .col {
+    width: 100%;
+  }
+  #kontakt .flex-grid .col .ord {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #kontakt .flex-grid2 {
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 74%;
+    /*  border-right: 3px solid; */
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #kontakt .flex-grid2 .col {
+    width: 100%;
+  }
+
+  #kontakt .flex-grid3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5%;
+    margin-top: 5%;
+    z-index: -1;
+    width: 24%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    border-left: 1.5px solid;
+  }
+  #kontakt .flex-grid3 p {
+    text-align: center;
+  }
+}
+/*Sebastian flexbox slut*/
+/*Kontakt deskop slut*/
+/*Sebastian kode slut*/
+/* min-width 730px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #burgermenu {
+    font-size: 35px;
+    margin-top: 5%;
+    width: 15%;
+    display: block;
+  }
+
+  header .logo {
+    display: block;
+    width: 15%;
+  }
+
+  /*Sebastian kode start*/
+  /*kontakt ipad start*/
+  #kontakt .goflex {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  #kontakt .flex-grid3 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+  }
+  #kontakt .flex-grid3 .col1 {
+    margin-left: 50%;
+    width: 100%;
+  }
+  #kontakt .flex-grid3 .col2 {
+    margin-left: 150%;
+    width: 120%;
+  }
+}
+/*kontakt ipad slut*/
+/*Sebastian kode slut*/
